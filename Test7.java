@@ -15,10 +15,10 @@ public class Test7
 		}
 	}
 
-	static void rotate(int[] arr,int k,int n)
+	static void rotate(int[] arr,int n)
 	{
-		reverse(0,k-1,arr);
-		reverse(k,n-1,arr);
+		rreverse(0,n-2,arr);
+		reverse(n-1,n-1,arr);
 		reverse(0,n-1,arr);
 	}
 
