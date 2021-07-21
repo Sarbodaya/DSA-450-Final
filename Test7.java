@@ -1,5 +1,4 @@
 // Cyclically rotate an array by one 
-
 public class Test7
 {
 
@@ -17,7 +16,7 @@ public class Test7
 
 	static void rotate(int[] arr,int n)
 	{
-		rreverse(0,n-2,arr);
+		reverse(0,n-2,arr);
 		reverse(n-1,n-1,arr);
 		reverse(0,n-1,arr);
 	}
@@ -26,7 +25,7 @@ public class Test7
 		
 		int[] arr = {9, 8, 7, 6, 4, 2, 1, 3};
 		int n = arr.length;
-		rotate(arr,1,n);
+		rotate(arr,n);
 
 		for(int x:arr)
 		{
